@@ -105,3 +105,40 @@ input[type=radio] {
     }
 }
 
+@media screen and (max-width: 20rem) {
+    title {
+        font-size: 1.5rem;
+    }
+
+    .item__ing {
+        max-width: 90%;
+    }
+
+    .bayan__item:checked + .label__item .item__image .item-img {
+        max-height: 30rem;
+        transition: max-height 1s linear;
+    }
+
+    .header__text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 20.125rem) and (max-width: 48rem) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .item-img {
+        max-width: 75%;
+    }
+
+    .bayan__item:checked + .label__item .item__image .item-img {
+        max-height: 30rem;
+        transition: max-height 0.7s linear;
+    }
+
+    .header__text {
+        font-size: 1.5rem;
+    }
+}
