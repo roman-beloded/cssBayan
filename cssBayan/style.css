@@ -68,20 +68,6 @@ input[type=radio] {
     align-items: center;
 }
 
-.bayan__item:checked + label__item .item__image {
-    display: flex;
-    justify-content: center;
-}
-
-.bayan__item:checked + .label__item .item__image .item-img {
-    max-height: 30rem;
-}
-
-.bayan__item:checked + .label__item .item__header .arrow {
-    transform: rotate(180deg);
-    transition: transform 0.4s linear;
-}
-
 @media (hover:hover) {
     .bayan:hover .item .label__item .item__header .arrow {
         max-height: 2rem;
@@ -92,17 +78,48 @@ input[type=radio] {
         cursor: pointer;
     }
 
-    .bayan__item:hover + .label__item .item__image .item-img {
+    .bayan__item:hover+.label__item .item__image .item-img {
         max-height: 30rem;
         max-width: 60%;
         transition: all 0.4s linear;
     }
 
-    .bayan__item:hover + .label__item .item__header .arrow {
+    .bayan__item:hover+.label__item .item__header .arrow {
         max-height: 2rem;
         transform: rotate(180deg);
         transition: all 0.4s linear;
     }
+
+    .bayan:hover .item .label__item .item__header .header__text {
+        color: #6366fb;
+        transition: all 0.3s linear;
+    }
+
+    .bayan:hover .item .label__item .item__header .arrow {
+            stroke: #6366fb;
+            transition: all 0.3s linear;
+    }
+
+}
+
+.bayan__item:checked + .label__item .item__image {
+    display: flex;
+    justify-content: center;
+}
+
+.bayan__item:checked + .label__item .item__image .item-img {
+    max-height: 30rem;
+}
+
+.bayan__item:checked + .label__item .item__header .header__text {
+    color: #6366fb;
+    transition: all 0.3s linear;
+}
+
+.bayan__item:checked .item .label__item .item__header .arrow {
+    transform: rotate(180deg);
+    transition: transform 0.4s linear;
+    stroke: #000000;
 }
 
 @media screen and (max-width: 20rem) {
