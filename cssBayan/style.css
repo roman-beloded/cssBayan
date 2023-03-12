@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Russo One', sans-serif;
+    font-size: 62.5%;
+    background-color: #ffd29c;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.title {
+    margin-top: 3rem;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+.item {
+    align-items: center;
+}
+
+.bayan__item {
+    appearance: none;
+}
+
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.item__header {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.125rem solid #9fa0f0;
+}
+
+.header__text {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.arrow {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s linear;
+    stroke: #000000;
+}
+
+.item-img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-height: 0;
+    width: 60%;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+}
+
+.item__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bayan__item:checked + label__item .item__image {
+    display: flex;
+    justify-content: center;
+}
+
+.bayan__item:checked + .label__item .item__image .item-img {
+    max-height: 30rem;
+}
+
+.bayan__item:checked + .label__item .item__header .arrow {
+    transform: rotate(180deg);
+    transition: transform 0.4s linear;
+}
