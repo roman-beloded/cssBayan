@@ -81,3 +81,26 @@ input[type=radio] {
     transform: rotate(180deg);
     transition: transform 0.4s linear;
 }
+
+@media (hover:hover) {
+    .bayan:hover .item .label__item .item__header .arrow {
+        max-height: 2rem;
+        transition: all 0.4s linear;
+    }
+
+    .label__item:hover {
+        cursor: pointer;
+    }
+
+    .bayan__item:hover + .label__item .item__image .item-img {
+        max-height: 30rem;
+        max-width: 60%;
+        transition: all 0.4s linear;
+    }
+
+    .bayan__item:hover + .label__item .item__header .arrow {
+        max-height: 2rem;
+        transform: rotate(180deg);
+        transition: all 0.4s linear;
+    }
+}
