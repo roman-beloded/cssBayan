@@ -106,12 +106,12 @@ input[type=radio] {
 }
 
 @media screen and (max-width: 20rem) {
-    title {
+    .title {
         font-size: 1.5rem;
     }
 
-    .item__ing {
-        max-width: 90%;
+    .item-img {
+        max-width: 100%;
     }
 
     .bayan__item:checked + .label__item .item__image .item-img {
